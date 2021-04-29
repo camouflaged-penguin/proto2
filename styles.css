@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+button {
+       display: inline-block;
+       background-color: #7b38d8;
+       border-radius: 10px;
+       border: 4px double #cccccc;
+       color: #eeeeee;
+       text-align: center;
+       font-size: 28px;
+       padding: 20px;
+       width: 200px;
+       -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+       -o-transition: all 0.5s;
+       transition: all 0.5s;
+       cursor: pointer;
+       margin: 5px;
+     }
+
+input {
+          margin: 0px;
+          width:200px
+
+          }
+.nomargin {
+  margin: 0px;
+}
+
+
+
+.smaller-image {
+    width: 500px;
+  }
+.test-test {
+  text-align: center;
+}
+.rot{color:#ff0000;}
+
+.center{
+  align: "middle";
+}
+
+.nospace {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px; //game height - character height (200 - 50)
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+.animate{
+    animation: jump 300ms linear;
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px; //game height - character height - block height (200 - 50 - 20)
+    left: 480px; //game width - block width (500 - 20)
+    animation: block 1s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
